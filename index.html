@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Product Detail Page">
+    <meta name="author" content="Bhaskararao Gummidi">
+    <title>Product Detail Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<h1 id="title" style="background-color: mintcream;"><center>CHOOSE PRODUCT</center></h1>
+<div class="container">  <!-- container starting -->
+  <ul class="nav nav-tabs nav-justified"> 	<!-- nav-tabs -->
+    <li><a href="#" ng-click="showProduct1()" class="navTabs redBorder" id="navTab1">Lenovo</a></li>
+    <li><a href="#" ng-click="showProduct2()" class="navTabs" id="navTab2">Hp</a></li>
+    <li><a href="#" ng-click="showProduct3()" class="navTabs" id="navTab3">Mac</a></li>
+    <li><a href="#" ng-click="showProduct4()" class="navTabs" id="navTab4">Dell</a></li>
+    <li><a href="#" ng-click="showProduct5()" class="navTabs" id="navTab5">Lenovo</a></li>
+    <li><a href="#" ng-click="showProduct6()" class="navTabs" id="navTab6">Gamebox</a></li>
+  </ul>
+  <div class="tabcontent active" id="product1">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product3.jpg">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>Lenovo AIO300-20ISH F0BV003RIN 20-inch All-in-One Desktop (6th Gen i3-6100T/4GB/1TB/DOS/Integrated Graphics), Black</h3>
+			&#8377;<b>25,000.00</b><br>
+			<span class="status">In stock</span><hr><strong>Features</strong><br><br>
+			<ul>
+				<li>3.2GHz Intel i3-6100T 6th Gen processor </li>
+				<li>4GB DDR4 RAM </li>
+				<li>1TB 5400rpm Serial ATA hard drive </li>
+				<li>20-inch screen, Integrated Graphics </li>
+				<li>DOS operating system </li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="tabcontent" id="product2">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product1.png">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>HP AIO 20-C102IL 19.5-Inch Screen All-In-One Desktop (Celeron J3060, 4GB DDR3 RAM, 1 TB HDD, DOS, Intel HD Graphics), Black</h3>
+			&#8377;<b>30,000.00</b><br>
+			<span class="status">In stock</span><hr><strong>Features</strong><br><br>
+			<ul>
+				<li>49.53 cm (19.5 in) diagonal widescreen full high-definition VA WLED-backlit display</li>
+				<li>Intel Celeron J3060 (Braswell-D) Processor, Molokai-U Motherboard</li>
+				<li>4 GB DDR3L-1600 RAM, 1 TB SATA 7200 rpm ROM</li>
+				<li>DOS 2.0, Integrated Intel HD Graphics, Integrated speakers</li>
+				<li>Integrated Bluetooth 4.0 and Wireless LAN 802.11b/g/n featuring 2.4 GHz 1x1 technology</li>
+				<li>Ultra Slim Tray SuperMulti DVD Burner drive</li>
+				<li>1 Year Warranty</li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="tabcontent" id="product3">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product2.JPG">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>iMac 21.5 -inch, Core i5 1.6GHz/8GB/1TB/Intel HD Graphics 6000 - MK142HN/A </h3>
+			&#8377;<b>29,999.00</b><br>
+			<span style="color: red;font-weight: bold;">Out of stock</span><hr><strong>Features</strong><br><br>
+			<ul>			
+				<li>21.5 -inch</li>
+				<li>4K Retina,</li>
+				<li>Core i5 3.1GHz/8GB/1TB</li>
+				<li>Intel Iris Pro 6200</li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="tabcontent" id="product4">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product4.jpg">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>Dell Inspiron One 24 3459 Z266102HIN9 23.8-inch All-in-One Desktop (Core i3-6100U/4GB/1TB/Windows 10/Integrated Graphics), Black</h3>
+			&#8377;<b>32,325.00</b><br>
+			<span class="status">In stock</span><hr><strong>Features</strong><br><br>
+			<ul>
+			    <li>2.3GHz Intel Core i3-6100U processor</li>
+			    <li>4GB DDR3L RAM</li>
+			    <li>1TB hard drive</li>
+			    <li>23.8-inch screen, Intel HD Graphics</li>
+			    <li>Windows 10 operating system</li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="tabcontent" id="product5">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product5.jpeg">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>LENOVO C20-00 , CELERON J3060, 4GB RAM, 500 GB HDD, 19.5" SCREEN, WIFI, WEBCAM, DVD RW, WIRED KEYBOARD N MOUSE, DOS 1 YEAR WARRANTY </h3>
+			&#8377;<b>40,000.00</b><br>
+			<span style="color: red;font-weight: bold;">Out of stock</span><hr><strong>Features</strong><br><br>
+			<ul>
+			    <li>Desktop PC Intel® CoreTM i5 650 Processor with Max Turbo 3.46GHz</li>
+			    <li>4 MB Smart-cache Processor with Intel HD Graphics</li>
+			    <li>Samsung 18.5" IPS LED Monitor</li>
+			    <li>4GB DDR3 Desktop Ram Memory / Zebronics / Mercury H55 Motherboard</li>
+			    <li>Windows 10 Pro 64bit Original Operating system</li>
+			    <li>320 GB / 500 GB / 1 TB Hard Disk</li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="tabcontent" id="product6">  <!--product panel one starting-->
+  	<div class="row">
+  		<div class="col-md-6">
+  			<img src="./assets/images/product6.jpg">
+  		</div>
+  		<div class="col-md-6">	
+			<h3>GameBox Complete Desktop 15.6 inch AOC monitor PC CPU Computer (CORE 2 DUO 2.66Ghz & above/ 4 GB / 500GB HDD/LG DVD writer/DOS) ,Mouse/Keyboard with WIFI </h3>
+			&#8377;<b>35,456.00</b><br>
+			<span class="status">In stock</span><hr><strong>Features</strong><br><br>
+			<ul>
+			    <li>Intel Pentium J3710 Quad Core Processor</li>
+			    <li>4GB DDR3 RAM</li>
+			    <li>500GB SATA HDD with 7200RPM</li>
+			    <li>Microsoft Windows 10 Home (64-bit) OS with Integrated Intel HD Graphics</li>
+			    <li>49.53 cm (19.5 in) diagonal widescreen Full HD VA WLED-backlit display</li>
+			</ul>    
+  		</div>
+  	</div>
+  </div>  <!--product panel one ending-->
+  <div class="panel panel-default slidepanel">
+  <div class="row">   <!-- slider images row starting-->
+   <div class="col-md-8 slidecontent active" id="slidecontent1"> 	<!--first slide content starting-->
+  	<h1 id="productTitle">Moto 4G</h1>
+  	<div class="col-md-4">
+  		<img src="./assets/images/mobile1.jpg" class="slideimage">
+  	</div>
+  	<div class="col-md-4 descript">
+  		<strong>Features</strong><br><br>
+  		<ol>
+		    <li>VoLTE Model, Android 7.0 (Nougat)</li>
+		    <li>Display 5.0 inches 480x854 pixels</li>
+		    <li>Mediatek MT6737M Quad-core 1.1 GHz Cortex-A53</li>
+		    <li>Dual SIM (Micro-SIM, dual stand-by)</li>
+		    <li>1 Year Manufacture Warranty</li>
+  		</ol>
+  	</div>
+   </div>   <!--first slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent2">   <!--second slide content starting-->
+  		<h1 id="productTitle">Sony Xperia</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile2.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul>
+		    <li>13MP primary camera with auto mode</li>
+		    <li>5MP front facing camera with selfie mode</li>
+		    <li>13.97 centimeters (5.5-inch) TFT capacitive touchscreen</li>
+		    <li>Andorid v6.0 Marshmallow operating system</li>
+		    <li>1.2GHz Qualcomm Snapdragon quad core processor</li>
+		    <li>1 year manufacturer warranty</li>
+    		</ul>
+  	  </div>
+  	</div>   <!--second slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent3">   <!--third slide content starting-->
+  		<h1 id="productTitle">Micromax Canvas</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile3.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul>	
+			    <li>8MP primary camera with auto focus and 5MP front facing camera</li>
+			    <li>5.5 inch Display with 720 x 1280 pixels resolution</li>
+			    <li>Android operating system v6.0 (Marshmallow)</li>
+			    <li>1GB RAM, 16GB internal memory</li>
+			    <li>2500 mAh Li-Po battery providing talk-time of 8.5hours</li>
+			    <li>1 year manufacturer warranty</li>
+  			</ul>
+  		</div>
+  	</div>   <!--third slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent4">   <!--fourth slide content starting-->
+  		<h1 id="productTitle">Apple IPhone 5S</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile4.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul> 				
+			    <li>8MP primary camera with true tone flash, auto focus</li>
+			    <li>1.2MP front facing camera with HD video recording</li>
+			    <li>4-inch multi-touch retina display with 1136 x 640 pixels</li> 
+			    <li>iOS 7 operating system with 16GB internal memory</li>
+			    <li>Rechargable battery providing talk-time up to 10 hours</li> 
+			    <li>1 year manufacturer warranty</li> 
+  			</ul>
+  		</div>
+  	</div>   <!--fourth slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent5">   <!--fifth slide content starting-->
+  		<h1 id="productTitle">Samsung A7</h1>
+  		<div class="col-md-4">
+  		<img src="./assets/images/mobile5.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul> 				
+			    <li>16MP primary camera and 16MP front facing camera</li>
+			    <li>14.45 centimeters (5.7-inch) Full HD super AMOLED display</li> 
+			    <li>Android v6.0 Marshmallow OS with 2.2GHz Qualcomm MSM8953 Snapdragon processor</li>
+			    <li>4GB RAM, 64GB internal memory expandable up to 256GB</li>
+			    <li>Dual SIM dual-standby (4G+4G) with hybrid SIM</li>
+			    <li>3300mAh lithium-ion battery</li>
+			    <li>1 year manufacturer warranty</li> 
+  			</ul>
+  		</div>
+  	</div>   <!--fifth slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent6">   <!--sixth slide content starting-->
+  		<h1 id="productTitle">Oppo V5 Smartphone</h1>
+  		<div class="col-md-4">
+  		<img src="./assets/images/mobile6.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul>  				
+			    <li>13MP primary camera and 8MP front facing camera</li>
+			    <li>5-inch (12.7 centimeters) IPS HD capacitive touchscreen</li> 
+			    <li>Android v4.4.4 KitKat operating system with 2.5GHz</li>
+			    <li>3GB RAM, 16GB internal memory and single SIM</li>
+			    <li>4G network FDD-LTE: Band 1/3, TDD-LTE: Band 41</li>
+			    <li>3080mAH lithium-polymer battery.</li> 
+			    <li>1 year manufacturer warranty</li> 
+  			</ul>
+  		</div>
+  	</div>   <!--sixth slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent7">   <!--seventh slide content starting-->
+  		<h1 id="productTitle">Lenovo Note5</h1>
+  		<div class="col-md-4">
+  		<img src="./assets/images/mobile7.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul> 				
+			    <li>2.5D Tempered Glass: Original Gorilla/ Asahi glass</li> 
+			    <li>Military Grade Anti-Scratch Technology</li>
+			    <li>Our premium tempered glass is 100% anti-scratch.</li> 
+			    <li>We layer it with vacuum electroplating coating</li> 
+			    <li>Which is used to coat military helicopter to protect from adverse conditions.</li>
+			    <li>Ballistic grade original Asahi glass imported from Japan</li>
+			    <li>Ultra Clear High Definition Coating.</li>
+  			</ul>
+  		</div>
+  	</div>   <!--seventh slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent8">   <!--eight slide content starting-->
+  		<h1 id="productTitle">Blackberry Querty V2.0</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile8.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul>				
+			    <li>3.15MP primary camera with LED flash, geo-tagging</li>
+			    <li>6.197 centimeters (2.44-inch)touchscreen</li>
+			    <li>BlackBerry OS 7.1 operating system</li>
+			    <li>512MB RAM, 512MB internal memory,single SIM</li>
+			    <li>1450mAH lithium-ion battery providing talk-time</li>
+			    <li>1 year manufacturer warranty</li> 
+  			</ul>
+  		</div>
+  	</div>   <!--eight slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent9">   <!--ninth slide content starting-->
+  		<h1 id="productTitle">Nokia Lumia 600</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile9.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul> 				
+			    <li>5MP primary camera with auto focus, 4x digital zoom, LED flash</li>
+			    <li>Windows Phone 8 OS with 1.7GHz Qualcomm Snapdragon S4 dual core processor</li>
+			    <li>1GB RAM, 8GB internal memory expandable up to 64GB</li>
+			    <li>3400mAH battery providing talk-time</li> 
+			    <li>1 year manufacturer warranty</li>
+  			</ul>
+  		</div>
+  	</div>   <!--ninth slide content ending-->
+  	<div class="col-md-8 slidecontent" id="slidecontent10">   <!--tenth slide content starting-->
+  		<h1 id="productTitle">Vivo V5 Smartphone</h1>
+  		<div class="col-md-4">
+  			<img src="./assets/images/mobile10.jpg" class="slideimage">
+  		</div>
+  		<div class="col-md-4 descript">
+  			<strong>Features</strong><br><br>
+  			<ul>				
+			    <li>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</li>
+			    <li>13MP Rear Camera | 20MP Front Camera</li>
+			    <li>3000 mAh Li-Ion Battery</li>
+			    <li>MediaTek MT6750 Processor</li>
+			    <li>AK4376 Hi-Fi Audio Chip, SNR as High as 115 dB, Hi-Fi Music</li>
+  			</ul>
+  		</div>
+  	</div>   <!--tenth slide content ending-->
+  	<div class="col-md-4 slidecolumn"> 	<!-- slidetabs column starting -->
+  	<h2>Mobile Brands</h2>
+  	  <div class="well slidewell">
+  		<ul>
+  			<li ng-click="slideimage1()" class="slidetab red" id="slidetab1"><img src="./assets/images/moto.png">MOTO</li>
+  			<li ng-click="slideimage2()" class="slidetab" id="slidetab2"><img src="./assets/images/sony.png">SONY</li>
+  			<li ng-click="slideimage3()" class="slidetab" id="slidetab3"><img src="./assets/images/micromax.jpg">MICROMAX</li>
+  			<li ng-click="slideimage4()" class="slidetab" id="slidetab4"><img src="./assets/images/apple.png">APPLE</li>
+  			<li ng-click="slideimage5()" class="slidetab" id="slidetab5"><img src="./assets/images/samsung.png">SAMSUNG</li>
+  			<li ng-click="slideimage6()" class="slidetab" id="slidetab6"><img src="./assets/images/redmi.jpg">OPPO</li>
+  			<li ng-click="slideimage7()" class="slidetab" id="slidetab7"><img src="./assets/images/Lenovo.png">LENOVO</li>
+  			<li ng-click="slideimage8()" class="slidetab" id="slidetab8"><img src="./assets/images/blackberry.jpg">BLACKBERRY</li>
+  			<li ng-click="slideimage9()" class="slidetab" id="slidetab9"><img src="./assets/images/lumia.png">LUMIA</li>
+  			<li ng-click="slideimage10()" class="slidetab" id="slidetab10"><img src="./assets/images/vivo.jpg">VIVO</li>
+  		</ul>
+  	  </div>
+  	</div> 	 <!-- slidetabs column ending -->
+  </div>    <!-- slider images row ending-->
+  </div>
+  <div class="panel panel-default" style="height: 595px;overflow: scroll;">   <!-- searching and sorting panel starting -->
+  	<div class="row" ng-controller="searchCtrl"> 	<!-- searching and sorting row starting -->
+  	  <div class="col-md-3"> 	<!-- search filter column starting -->
+  	  	<div class="well searchwell"> 	<!-- searching and sorting well starting -->
+  	  	<h4 id="search"><b>SEARCH</b></h4>
+  	  	Brand type :<br>
+  	  		<select ng-model="txt">
+  	  			<option ng-repeat="brand in brands">{{ brand }}</option>
+  	  		</select><br><br>
+  	  	Price Range :<br>
+  	  		<select ng-model="txtmin">
+  	  		<option ng-repeat="mn in min">{{mn}}</option>
+  	  		</select> To
+  	  		<select ng-model="txtmax">
+  	  		<option ng-repeat="mx in max">{{mx}}</option>
+  	  		</select><br><br>
+  	  		<center><button class="btn btn-sm btn-primary" ng-click="getItem()">SEARCH</button></center><br>
+  	  		<center><button class="btn btn-sm btn-info" ng-click="clearItem()">CLEAR SEARCH</button></center><br><br>
+	  	  	<h4 id="search"><b>SORT</b></h4>
+	  	  	By - 
+	  	  	<select ng-model="sortBy">
+	  	  		<option ng-repeat="sort in sorting">{{sort}}</option>
+	  	  	</select>
+  	  	</div>   <!-- searching and sorting well ending -->
+  	  </div> 	<!-- search filter column ending -->
+  	  <div class="col-md-9" ng-hide="errMessage">
+  	  	<div>
+  	  		<h3 style="color: red;"><b>
+				No local results match your search, below are our national listings.<br>
+				0 Results. AdvancedSearch</b>
+			</h3>
+			<center><h3>Sorry, it looks like we can’t find an exact match in our listings right now.</h3>
+			<p>You can try updating your search filters on the left, or maybe expanding your search area.</p></center>
+  	  	</div>
+  	  </div>
+  	  <div class="col-md-3" ng-repeat="all in filterBrands | orderBy:sortBy"> 	<!-- all products ddlist starting-->
+  	  	<table>
+  	  	  <thead><tr><th colspan="2"><center>{{all.brand}}</center></th></tr></thead>
+  	  	  <tfoot><tr><td colspan="2"><center>&#8377;{{all.price}}</center></td></tr></tfoot>
+  	  	  <tbody><tr><td>{{all.features}}</td>
+		  	  	<td><img ng-src="{{all.image}}" width="180" height="200" style="margin: 5px;"></td></tr>
+  	  	  </tbody>
+  	  	</table><br>
+  	  </div>	<!-- all products ddlist ending-->
+  	  </div>		
+  	</div>	 <!-- searching and sorting row ending -->
+  </div>   <!-- searching and sorting panel ending -->
+</div>	<!-- container ending -->
+</body>
+</html>
