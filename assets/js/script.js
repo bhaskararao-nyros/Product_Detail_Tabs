@@ -121,6 +121,7 @@ app.controller("myCtrl", function($scope)
 					//second controller for search filter
 app.controller('searchCtrl', function($scope)
 {
+$scope.result = true;
 $scope.errMessage = true;
 $scope.txt = 'All brand types';
 $scope.txtmin = '5000';
@@ -170,9 +171,15 @@ $scope.getItem = function()
 		});
 	}
 	$scope.filterBrands = finalArr;
+	$scope.result = false;
+	$scope.brandname = $scope.txt;
+	$scope.mini = $scope.txtmin;
+	$scope.maxi = $scope.txtmax;
+	$scope.len = finalArr.length;
 	if($scope.filterBrands == "")
 	{
 		$scope.errMessage = false;
+		$scope.result = true;
 	}
 	else
 	{
